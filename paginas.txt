@@ -1,0 +1,8 @@
+https://es.wikipedia.org/wiki/Shellshock_(error_de_software)
+
+https://www.solvetic.com/tutoriales/article/1615-sqlmap-herramienta-de-inyecci%C3%B3n-de-sql-y-ethical-hacking-de-bases-de-datos/#:~:text=Esta%20herramienta%20sirve%20para%20testear,de%20una%20base%20de%20datos.
+
+https://www.elladodelmal.com/2015/04/ssrf-server-side-request-forgery-xspa.html
+
+https://www.ionos.es/digitalguide/servidores/seguridad/cross-site-request-forgery/
+
