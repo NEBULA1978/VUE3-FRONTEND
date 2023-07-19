@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get contacts</title>
-</head>
-<body>
-    <button>Get Contacts</button>
-    <div id="contacts"></div>
-<script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Get contacts</title>
+    </head>
+    <body>
+        <button>Get Contacts</button>
+        <div id="contacts"></div>
+        <script>
     const button = document.querySelector("body > button")
     const contactsDiv = document.getElementById("contacts");
 
@@ -30,8 +30,8 @@
     button.onclick = () => fetch('https://jsonplaceholder.typicode.com/users')
     .then(r => r.json())
     .then(users => {
-       console.log(users.map(u => `${u.name}`))
+       console.log(users.map(u => `<div>${u.name}</div>`).join(''))
     })
-</script>    
-</body>
+</script>
+    </body>
 </html>
