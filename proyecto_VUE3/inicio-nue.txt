@@ -113,5 +113,7 @@ royecto_VUE3/todo-list/dist$ serve .
 
 ///////////////////////////////////////
 
+Voy video Maquetamos nuestra App con los templates de Vue
+￼
 
 
