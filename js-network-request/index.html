@@ -7,7 +7,10 @@
     </head>
     <body>
         <button>Get Contacts</button>
-        <div id="contacts"></div>
+        <div id="contacts">
+            <!-- Simulacion de lo que hacen frameworks -->
+            <!-- <div forEach(users)>user.name</div> -->
+        </div>
         <script>
     const button = document.querySelector("body > button")
     const contactsDiv = document.getElementById("contacts");
@@ -30,7 +33,7 @@
     button.onclick = () => fetch('https://jsonplaceholder.typicode.com/users')
     .then(r => r.json())
     .then(users => {
-       console.log(users.map(u => `<div>${u.name}</div>`).join(''))
+       contactsDiv.innerHTML=users.map(u => `<div>${u.name}</div>`).join('')
     })
 </script>
     </body>
