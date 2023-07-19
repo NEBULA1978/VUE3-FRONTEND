@@ -1,0 +1,117 @@
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/Vue-mastermind$ 
+cd proyecto_VUE3/
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/Vue-mastermind/p
+royecto_VUE3$ npm init vue@latest
+Need to install the following packages:
+  create-vue@3.7.1
+Ok to proceed? (y) y
+
+Vue.js - The Progressive JavaScript Framework
+
+✔ Project name: … todo-list
+✔ Add TypeScript? … No / Yes
+✔ Add JSX Support? … No / Yes
+✔ Add Vue Router for Single Page Application development? … No / Yes
+✔ Add Pinia for state management? … No / Yes
+✔ Add Vitest for Unit Testing? … No / Yes
+✔ Add an End-to-End Testing Solution? › No
+✔ Add ESLint for code quality? … No / Yes
+
+Scaffolding project in /home/next/Vídeos/varios anteriores/VIDEOS_PROYECTOS/Vue-mastermind/proyecto_VUE3/todo-list...
+
+Done. Now run:
+
+  cd todo-list
+  npm install
+  npm run dev
+
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/Vue-mastermind/p
+royecto_VUE3$ 
+
+//////////////////////////////////////////7
+
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/Vue-mnext@rases:next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/Vue-mastermind/p
+royecto_VUE3$   cd todo-list
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/Vue-mastermind/p
+royecto_VUE3/todo-list$   npm install
+
+added 25 packages, and audited 26 packages in 2m
+
+3 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/Vue-mastermind/p
+royecto_VUE3/todo-list$ npm run dev
+
+> todo-list@0.0.0 dev
+> vite
+
+
+  VITE v4.4.4  ready in 385 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h to show help
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/Vue-mastermind/p
+royecto_VUE3/todo-list$ npm run build
+
+> todo-list@0.0.0 build
+> vite build
+
+vite v4.4.4 building for production...
+✓ 23 modules transformed.
+dist/assets/logo-277e0e97.svg    0.28 kB │ gzip:  0.20 kB
+dist/index.html                  0.42 kB │ gzip:  0.28 kB
+dist/assets/index-ef4f98ff.css   3.69 kB │ gzip:  1.19 kB
+dist/assets/index-393e57c5.js   60.05 kB │ gzip: 23.86 kB
+✓ built in 1.33s
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/Vue-mastermind/p
+royecto_VUE3/todo-list$ 
+
+
+///////////////////////////////////////////////
+instalo herramienta:
+cd dist/
+
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/Vue-mastermind/p
+royecto_VUE3/todo-list/dist$  npm i -g serve
+
+added 89 packages in 2m
+
+24 packages are looking for funding
+  run `npm fund` for details
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/Vue-mastermind/p
+royecto_VUE3/todo-list/dist$ 
+
+INICIO SERVIDOR::
+
+royecto_VUE3/todo-list/dist$ serve .
+ WARN  Checking for updates failed (use `--debug` to see full error)
+
+   ┌───────────────────────────────────────────┐
+   │                                           │
+   │   Serving!                                │
+   │                                           │
+   │   - Local:    http://localhost:3000       │
+   │   - Network:  http://192.168.43.98:3000   │
+   │                                           │
+   │   Copied local address to clipboard!      │
+   │                                           │
+   └───────────────────────────────────────────┘
+
+ HTTP  19/7/2023 20:28:33 ::1 GET /
+ HTTP  19/7/2023 20:28:33 ::1 Returned 200 in 54 ms
+ HTTP  19/7/2023 20:28:33 ::1 GET /assets/index-393e57c5.js
+ HTTP  19/7/2023 20:28:33 ::1 Returned 200 in 5 ms
+ HTTP  19/7/2023 20:28:33 ::1 GET /assets/index-ef4f98ff.css
+ HTTP  19/7/2023 20:28:33 ::1 Returned 200 in 42 ms
+ HTTP  19/7/2023 20:28:33 ::1 GET /assets/logo-277e0e97.svg
+ HTTP  19/7/2023 20:28:33 ::1 Returned 200 in 4 ms
+ HTTP  19/7/2023 20:28:34 ::1 GET /favicon.ico
+ HTTP  19/7/2023 20:28:34 ::1 Returned 200 in 2 ms
+
+///////////////////////////////////////
+
+
+
