@@ -1,0 +1,63 @@
+<script src="https://unpkg.com/vue@3"></script>
+
+<div id="app">
+
+</div>
+
+<script>
+  // Importar las funciones necesarias desde Vue 3.
+  const { createApp, h } = Vue
+
+  // Definir el componente "Counter".
+  const Counter = {
+    // Definir los datos locales del componente.
+    data() {
+      return {
+        count: 5
+      }
+    },
+
+    // Definir los métodos del componente.
+    methods: {
+      increment() {
+        this.count++;
+      },
+      decrement() {
+        this.count--;
+      }
+    },
+
+    // Definir la función "render" que renderiza el componente.
+    // El parámetro "component" representa el propio componente.
+    render(component) {
+      // Usar la función "h" (createElement) para crear elementos virtuales.
+      // Los elementos virtuales describen la estructura del DOM que se va a generar.
+      return h('div', {}, [
+        // Usar el valor de "component.count" para mostrar el conteo actual.
+        `Count is: ${component.count}`,
+        // Crear el botón "Increment" con su evento "onClick" asociado al método "increment".
+        h('button', { onClick: () => component.increment() }, ["Increment"]),
+        // Crear el botón "Decrement" con su evento "onClick" asociado al método "decrement".
+        h('button', { onClick: () => component.decrement() }, ["Decrement"]),
+      ])
+    }
+  }
+
+  // Crear la aplicación usando el componente "Counter" y montarla en el elemento con ID "app".
+  const app = createApp(Counter).mount("#app");
+</script>
+
+
+<!-- Explicación:
+
+    En el código HTML, se importa la biblioteca de Vue 3 desde unpkg.com usando la URL proporcionada. Además, se crea un contenedor con el ID "app" donde se montará la aplicación Vue.
+
+    En el bloque <script>, se utilizan las destructuraciones para importar dos funciones importantes de Vue 3: createApp y h (createElement). createApp se utiliza para crear una instancia de la aplicación Vue y h es una función que se utilizará para crear elementos virtuales (también conocidos como VNodes) que describen la estructura del DOM que se va a generar.
+
+    Se define un nuevo componente llamado "Counter" que contiene la lógica y la apariencia del contador. Este componente tiene un dato local llamado "count" con un valor inicial de 5 y dos métodos: "increment" y "decrement" que se utilizan para aumentar y disminuir el valor de "count", respectivamente.
+
+    La función "render" se utiliza para generar la representación visual del componente. Aquí se utilizan elementos virtuales creados con la función h para describir cómo se verá el componente en el DOM. El primer parámetro de h es el nombre del elemento HTML o el componente personalizado, en este caso, "div" para el contenedor principal. El segundo parámetro es un objeto que representa los atributos del elemento (en este caso, un objeto vacío, ya que no hay atributos). El tercer parámetro es un array de elementos hijos, que en este caso contiene una cadena que muestra el valor actual de "count" y dos botones ("Increment" y "Decrement") que tienen eventos "onClick" asociados a los métodos "increment" y "decrement" respectivamente.
+
+    Se crea la instancia de la aplicación Vue utilizando el componente "Counter" y se monta en el elemento con ID "app". Esto hará que el componente "Counter" se renderice en el contenedor con ID "app" y se muestre en la página web. -->
+
+<!-- // En resumen, este código crea una pequeña aplicación Vue que muestra un contador con dos botones para incrementar y decrementar el valor del contador. Al hacer clic en los botones, el valor del contador cambiará y se reflejará en la interfaz de usuario. El uso de h y elementos virtuales es una forma más programática de definir la estructura del DOM en Vue 3. -->
